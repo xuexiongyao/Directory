@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+	<menuBar name="公共文书" index="1">
+		<menu name="物品清单" index="1">
+			<menuItem name="呈请调取证据清单报告书" dm="042203" index="1"></menuItem>
+			<menuItem name="接收证据材料清单" dm="042301" index="2"></menuItem>
+			<menuItem name="查封清单" dm="042603" index="3"></menuItem>
+			<menuItem name="解除查封清单" dm="042605" index="4"></menuItem>
+			<menuItem name="扣押清单" dm="042703" index="5"></menuItem>
+			<menuItem name="发还清单" dm="050101" index="6"></menuItem>
+			<menuItem name="随案移送清单" dm="050103" index="7"></menuItem>
+			<menuItem name="销毁清单" dm="050105" index="8"></menuItem>
+			<menuItem name="登记保存清单报告书" dm="042401" index="8"></menuItem>
+			<menuItem name="调取证据清单报告书" dm="042203" index="9"></menuItem>
+
+		</menu>
+		<menu name="笔录" index="2">
+			<menuItem name="询问笔录" dm="041301" index="1"></menuItem>
+			<menuItem name="讯问笔录" dm="041801" index="2"></menuItem>
+			<menuItem name="人身检查笔录" dm="040501" index="3"></menuItem>
+			<menuItem name="辨认笔录" dm="041601" index="4"></menuItem>
+			<menuItem name="搜查笔录" dm="041703" index="5"></menuItem>
+			<menuItem name="侦查实验笔录" dm="040402" index="6"></menuItem>
+			<menuItem name="复验、复查笔录" dm="040303" index="7"></menuItem>
+			<menuItem name="查封笔录" dm="042611" index="8"></menuItem>
+			<menuItem name="提取笔录" dm="040602" index="9"></menuItem>
+			<menuItem name="扣押笔录" dm="042713" index="10"></menuItem>
+			<menuItem name="现场勘验笔录" dm="040301" index="11"></menuItem>
+		</menu>
+		<menu name="复议复核" index="3">
+			<menuItem name="复议" dm="070001" index="1"></menuItem>
+			<menuItem name="要求复议" dm="070003" index="2"></menuItem>
+			<menuItem name="提请复核" dm="070005" index="3"></menuItem>
+		</menu>
+		<menu name="告知书" index="4">
+			<menuItem name="告知书" dm="110006" index="1"></menuItem>
+		</menu>
+	</menuBar>
+
+	<menuBar name="受案" index="2">
+		<menu name="接受案件" index="1">
+			<menuItem name="受案登记" dm="010003" index="1"></menuItem>
+			<menuItem name="受案回执" dm="010002" index="2"></menuItem>
+		</menu>
+	</menuBar>
+
+	<menuBar name="移送案件" index="3">
+		<menu name="移送案件" index="1">
+			<menuItem name="移送案件" dm="020004" index="1"></menuItem>
+		</menu>
+	</menuBar>
+
+	<menuBar name="立案不予立案" index="4">
+		<menu name="立案、不予立案" index="1">
+			<menuItem name="立案" dm="030001" index="1"></menuItem>
+			<menuItem name="不予立案" dm="020001" index="2"></menuItem>
+			<menuItem name="不予立案理由" dm="020006" index="3"></menuItem>
+		</menu>
+	</menuBar>
+
+	<menuBar name="律师参与" index="5">
+		<menu name="律师参与诉讼" index="1">
+			<menuItem name="提供律师援助" dm="090002" index="1"></menuItem>
+			<menuItem name="会见犯罪嫌疑人" dm="090004" index="2"></menuItem>
+			<menuItem name="不准予会见" dm="090007" index="3"></menuItem>
+		</menu>
+	</menuBar>
+
+	<menuBar name="调取证据" index="6">
+		<menu name="传唤" index="1">
+			<menuItem name="传唤" dm="041901" index="1"></menuItem>
+		</menu>
+		<menu name="解剖尸体" index="2">
+			<menuItem name="解剖尸体" dm="040304" index="1"></menuItem>
+		</menu>
+		<menu name="查询财产" index="3">
+			<menuItem name="协助查询财产" dm="041201" index="1"></menuItem>
+			<menuItem name="协助冻结财产" dm="042501" index="2"></menuItem>
+			<menuItem name="协助解除冻结" dm="042503" index="3"></menuItem>
+		</menu>
+		<menu name="查封、扣押" index="4">
+			<menuItem name="查封决定" dm="042601" index="1"></menuItem>
+			<menuItem name="协助查封" dm="042607" index="2"></menuItem>
+			<menuItem name="协助解除查封" dm="042609" index="3"></menuItem>
+			<menuItem name="扣押决定" dm="042701" index="4"></menuItem>
+			<menuItem name="扣押邮件" dm="042705" index="5"></menuItem>
+		</menu>
+		<menu name="技术侦查" index="5">
+			<menuItem name="采取技术侦查" dm="042801" index="1"></menuItem>
+			<menuItem name="执行技术侦查" dm="042803" index="2"></menuItem>
+			<menuItem name="延长技术侦查" dm="042805" index="3"></menuItem>
+			<menuItem name="解除技术侦查" dm="042807" index="4"></menuItem>
+		</menu>
+		<menu name="办案协作" index="6">
+			<menuItem name="办案协作" dm="100001" index="1"></menuItem>
+		</menu>
+		<menu name="搜查" index="7">
+			<menuItem name="搜查" dm="041701" index="1"></menuItem>
+		</menu>
+		<menu name="没收违法所得" index="8">
+			<menuItem name="没收违法所得" dm="043404" index="1"></menuItem>
+		</menu>
+		<menu name="鉴定" index="9">
+			<menuItem name="鉴定聘请" dm="040802" index="1"></menuItem>
+			<menuItem name="鉴定意见" dm="040805" index="2"></menuItem>
+		</menu>
+		<menu name="回避" index="10">
+			<menuItem name="回避" dm="080001" index="1"></menuItem>
+			<menuItem name="驳回申请回避" dm="080003" index="2"></menuItem>
+		</menu>
+	</menuBar>
+
+	<menuBar name="强制措施" index="7">
+		<menu name="拘传" index="1">
+			<menuItem name="拘传" dm="042101" index="1"></menuItem>
+		</menu>
+		<menu name="拘留" index="2">
+			<menuItem name="拘留" dm="042107" index="1"></menuItem>
+		</menu>
+
+		<menu name="取保候审" index="3">
+			<menuItem name="取保（财保）" dm="042103" index="1"></menuItem>
+			<menuItem name="取保（人保）" dm="042154" index="2"></menuItem>
+			<menuItem name="保存证件" dm="042115" index="3"></menuItem>
+			<menuItem name="收取保证金" dm="042113" index="4"></menuItem>
+			<menuItem name="没收保证金" dm="042119" index="5"></menuItem>
+			<menuItem name="对保证人罚款" dm="042121" index="6"></menuItem>
+			<menuItem name="责令具结悔过" dm="042123" index="7"></menuItem>
+			<menuItem name="解除取保" dm="042125" index="8"></menuItem>
+		</menu>
+
+		<menu name="监视居住" index="4">
+			<menuItem name="监视居住" dm="042105" index="1"></menuItem>
+			<menuItem name="指定居所" dm="042127" index="2"></menuItem>
+			<menuItem name="解除监视居住" dm="042129" index="3"></menuItem>
+		</menu>
+		<menu name="逮捕" index="5">
+			<menuItem name="提请批准逮捕" dm="042143" index="1"></menuItem>
+			<menuItem name="签发逮捕证" dm="042144" index="2"></menuItem>
+			<menuItem name="变更逮捕措施" dm="042133" index="3"></menuItem>
+
+		</menu>
+		<menu name="释放" index="6">
+			<menuItem name="释放" dm="042139" index="1"></menuItem>
+			<menuItem name="不予释放" dm="042135" index="2"></menuItem>
+			<menuItem name="不予变更强制措施" dm="042136" index="3"></menuItem>
+		</menu>
+		<menu name="变更羁押" index="7">
+			<menuItem name="变更羁押" dm="042152" index="1"></menuItem>
+		</menu>
+		<menu name="强制医疗" index="8">
+			<menuItem name="强制医疗" dm="800001" index="1"></menuItem>
+		</menu>
+		<menu name="传讯" index="9">
+			<menuItem name="传讯" dm="042150" index="1"></menuItem>
+		</menu>
+
+
+	</menuBar>
+	<menuBar name="撤销案件" index="8">
+		<menu name="撤销案件" index="1">
+			<menuItem name="撤销案件" dm="040201" index="1"></menuItem>
+			<menuItem name="终止侦查" dm="043501" index="2"></menuItem>
+		</menu>
+	</menuBar>
+	<menuBar name="侦查终结" index="9">
+		<menu name="侦查终结" index="1">
+			<menuItem name="侦查终结" dm="050001" index="1"></menuItem>
+			<menuItem name="移送起诉" dm="050008" index="2"></menuItem>
+			<menuItem name="补充侦查" dm="060002" index="3"></menuItem>
+
+		</menu>
+	</menuBar>
+</ROOT>

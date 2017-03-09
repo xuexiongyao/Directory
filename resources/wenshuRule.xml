@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+	<!-- 案件状态控制文书办理 -->
+	<rule type="0000" iscontain="true" message="案件未受理状态下不可做此业务！">
+		<item dm="010003" mc="受案" />
+	</rule>
+	<rule type="0100" iscontain="true" message="受案状态下不可做此业务！"><!-- 接受案件 -->
+		<item dm="010002" mc="受案回执" />
+		<item dm="110006" mc="告知书" />
+		<item dm="030001" mc="呈请立案报告书" />
+		<item dm="020001" mc="呈请不予立案报告书" />
+		<item dm="020004" mc="呈请移送案件报告书" />
+		<item dm="080001" mc="呈请回避报告书" />
+		<item dm="080003" mc="呈请驳回申请回避报告书" />
+		<item dm="070001" mc="呈请刑事复议报告书" />
+		<item dm="070003" mc="呈请要求复议报告书" />
+		<item dm="070005" mc="呈请提请复核报告书" />
+		<item dm="040201" mc="呈请撤销案件报告书" />
+		<item dm="100001" mc="呈报办案协作报告书" />
+		<item dm="042201" mc="呈请调取证据报告书" />
+		<item dm="042301" mc="呈请接收证据材料报告书" />
+		<item dm="041201" mc="呈请协助查询财产报告书" />
+		<item dm="041302" mc="呈请询问报告书" />
+		<item dm="090002" mc="呈请提供法律援助报告书" />
+		<item dm="090004" mc="呈请会见犯罪嫌疑人报告书" />
+		<item dm="090007" mc="呈请不准予会见报告书" />
+		<item dm="040301" mc="现场勘查笔录" />
+		<item dm="040303" mc="复验、复查笔录" />
+		<item dm="040402" mc="侦查实验笔录" />
+		<item dm="040501" mc="人身检查笔录" />
+		<item dm="041601" mc="辨认笔录" />
+		<item dm="041301" mc="询问笔录" />
+		<item dm="041703" mc="搜查笔录" />
+		<item dm="041801" mc="讯问笔录" />
+		<item dm="042611" mc="现查封笔录" />
+		<item dm="042713" mc="扣押笔录" />
+		<item dm="040602" mc="提取笔录" />
+	</rule>
+
+	<rule type="0300" iscontain="true" message="不予立案状态下不可做此业务"><!-- 不予立案 -->
+		<item dm="020006" mc="呈请不予立案理由报告书" />
+		<item dm="030001" mc="呈请立案报告书" />
+	</rule>
+
+	<rule type="0302" iscontain="true" message="案件移交管辖下不可做此业务"><!-- 不予立案 -->
+	</rule>
+
+	<rule type="0400" iscontain="false" message="立案状态下不可做此业务"><!-- 立案 -->
+		<item dm="010003" mc="受案" />
+		<item dm="030001" mc="呈请立案报告书" />
+		<item dm="010002" mc="受案回执" />
+		<item dm="020001" mc="呈请不予立案报告书" />
+		<item dm="020006" mc="呈请不予立案理由报告书" />
+		<item dm="050008" mc="移送起诉" />
+		<item dm="060002" mc="补充侦查" />
+	</rule>
+	<rule type="0500" iscontain="true" message="撤销案件状态下不可做此业务"><!-- 撤销案件 -->
+	</rule>
+	<rule type="0600" iscontain="true" message="侦查终结状态下不可做此业务"><!-- 侦查终结 -->
+		<item dm="050008" mc="移送起诉" />
+		<item dm="060002" mc="补充侦查" />
+
+	</rule>
+	<rule type="0700" iscontain="true" message="移送起诉状态下不可做此业务"><!-- 移送起诉 -->
+		<item dm="060002" mc="" />
+	</rule>
+	<rule type="0800" iscontain="true" message="补充侦查状态下不可做此业务"><!-- 补充侦查 -->
+		<item dm="050008" mc="" />
+	</rule>
+	<!-- 嫌疑人当前状态下可做的强制措施 -->
+
+	<rule type="2" message="拘留状态下不可以办理" iscontain="true"><!--拘留 -->
+		<items dm="042107" mc="拘留" />
+	</rule>
+	<rule type="3" message="取保状态下不可以办理" iscontain="true"><!--取保 -->
+		<items dm="042103" mc="取保候审" />
+		<items dm="042154" mc="取保候审" />
+	</rule>
+	<rule type="4" message="监视居住状态下不可以办理" iscontain="true"><!--监视居住 -->
+		<items dm="042105" mc="监视居住" />
+	</rule>
+	<rule type="5" message="逮捕状态下不可以办理" iscontain="true"><!--逮捕 -->
+		<items dm="042107" mc="拘留" />
+		<items dm="042103" mc="取保候审" />
+		<items dm="042154" mc="取保候审" />
+		<items dm="042105" mc="监视居住" />
+		<items dm="042143" mc="提请批准逮捕" />
+	</rule>
+<rule type="11" message="已提请逮捕下不可以办理" iscontain="true"><!--已提请逮捕 -->
+		<items dm="042107" mc="拘留" />
+		<items dm="042103" mc="取保候审" />
+		<items dm="042154" mc="取保候审" />
+		<items dm="042105" mc="监视居住" />
+		<items dm="042143" mc="提请批准逮捕" />
+		<items dm="042144" mc="签发逮捕证" />
+	</rule>
+
+	<rule type="15" message="批准逮捕下不可以办理" iscontain="true"><!--批准逮捕 -->
+		<items dm="042144" mc="签发逮捕证" />
+	</rule>
+
+</ROOT>

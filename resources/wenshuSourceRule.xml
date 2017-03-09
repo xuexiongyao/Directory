@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+	<!--DX是否多选、BX是否必选， DXBM处理对象表名可多个，ONE案件中是否可出具多份,ONLY 案件是否在呈请报告中只有一份，BTFLWS必填法律文书后才能送审  WDX 无对象信息，无需显示对象列表-->
+	<WS FLWSDM="010001" FLWSMC="受案登记表" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="true" BTFLWS="" WDX="true" ONLY="true"/>
+	<WS FLWSDM="010002" FLWSMC="受案回执" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS=""  WDX="true" ONLY="true"/>
+	<WS FLWSDM="010003" FLWSMC="呈请受案" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="true" BTFLWS="010001"  WDX="true" ONLY="true"/>
+	<WS FLWSDM="020001" FLWSMC="呈请不予立案报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="true" BTFLWS="020002" />
+	<WS FLWSDM="020002" FLWSMC="不予立案通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" WDX="true" ONLY="true"/>
+	<WS FLWSDM="020003" FLWSMC="不予立案理由说明书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" WDX="true" ONLY="true"/>
+	<WS FLWSDM="020004" FLWSMC="呈请移送案件报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="020005" />
+	<WS FLWSDM="020005" FLWSMC="移送案件通知书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="020006" FLWSMC="呈请不予立案理由报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="true" BTFLWS="020003" />
+	<WS FLWSDM="030001" FLWSMC="呈请立案报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="true" BTFLWS="030002" />
+	<WS FLWSDM="030002" FLWSMC="立案决定书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="true" BTFLWS="" />
+	<WS FLWSDM="040102" FLWSMC="呈请指定管辖报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="040103" />
+	<WS FLWSDM="040103" FLWSMC="指定管辖决定书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="040201" FLWSMC="呈请撤销案件报告书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="true" BTFLWS="040202" />
+	<WS FLWSDM="040202" FLWSMC="撤销案件决定书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="true" BTFLWS="" />
+	<WS FLWSDM="040304" FLWSMC="呈请解剖尸体报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="040305" />
+	<WS FLWSDM="040305" FLWSMC="解剖尸体通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" WDX="true" ONLY="true"/>
+	<WS FLWSDM="040802" FLWSMC="呈请鉴定聘请报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="040803" />
+	<WS FLWSDM="040803" FLWSMC="鉴定聘请书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="040804" FLWSMC="鉴定意见通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="040805" FLWSMC="呈请鉴定意见报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="040804" />
+	<WS FLWSDM="041201" FLWSMC="呈请协助查询财产报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="041202" />
+	<WS FLWSDM="041202" FLWSMC="协助查询财产通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="041302" FLWSMC="呈请询问报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="041303" />
+	<WS FLWSDM="041303" FLWSMC="询问通知书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="041701" FLWSMC="呈请搜查报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="041702" />
+	<WS FLWSDM="041702" FLWSMC="搜查证" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="041802" FLWSMC="未成年人法定代理人到场通知书" DX="false" BX="true"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="" />
+	<WS FLWSDM="041803" FLWSMC="呈请未成年人法定代理人到场报告书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="041802" />
+	<WS FLWSDM="041901" FLWSMC="呈请传唤报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="041902" />
+	<WS FLWSDM="041902" FLWSMC="传唤证" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042101" FLWSMC="呈请拘传报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042102" />
+	<WS FLWSDM="042102" FLWSMC="拘传证" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042103" FLWSMC="呈请取保候审报告书（财保）" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042104" />
+	<WS FLWSDM="042104" FLWSMC="取保候审决定书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042105" FLWSMC="呈请监视居住报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042106" />
+	<WS FLWSDM="042106" FLWSMC="监视居住决定书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042107" FLWSMC="呈请拘留报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042108" />
+	<WS FLWSDM="042108" FLWSMC="拘留证" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042109" FLWSMC="提请批准逮捕书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" ONLY="true"/>
+	<WS FLWSDM="042111" FLWSMC="逮捕证" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042112" FLWSMC="取保候审保证书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042113" FLWSMC="呈请收取保证金报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042114" />
+	<WS FLWSDM="042114" FLWSMC="收取保证金通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042117" FLWSMC="呈请退还保证金决定报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042118" />
+	<WS FLWSDM="042118" FLWSMC="退还保证金决定通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042119" FLWSMC="呈请没收保证金决定报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042120" />
+	<WS FLWSDM="042120" FLWSMC="没收保证金决定通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042121" FLWSMC="呈请对保证人罚款决定报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042122" />
+	<WS FLWSDM="042122" FLWSMC="对保证人罚款决定通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042123" FLWSMC="呈请责令具结悔过报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042124" />
+	<WS FLWSDM="042124" FLWSMC="责令具结悔过决定书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042125" FLWSMC="呈请解除取保候审决定报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042126" />
+	<WS FLWSDM="042126" FLWSMC="解除取保候审决定通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042127" FLWSMC="呈请指定居所监视居住报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042128" />
+	<WS FLWSDM="042128" FLWSMC="指定居所监视居住通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042129" FLWSMC="呈请解除监视居住报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042130" />
+	<WS FLWSDM="042130" FLWSMC="解除监视居住决定通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042131" FLWSMC="拘留通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042132" FLWSMC="逮捕通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042133" FLWSMC="呈请变更逮捕措施报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042134" />
+	<WS FLWSDM="042134" FLWSMC="变更逮捕措施通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042135" FLWSMC="呈请不予释放措施报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042137" />
+	<WS FLWSDM="042136" FLWSMC="呈请不予变更强制措施报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042138" />
+	<WS FLWSDM="042137" FLWSMC="不予释放措施通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042138" FLWSMC="不予变更强制措施通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042139" FLWSMC="呈请释放报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042140" />
+	<WS FLWSDM="042140" FLWSMC="释放通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042141" FLWSMC="呈请强制医疗报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042142" />
+	<WS FLWSDM="042142" FLWSMC="强制医疗意见书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042143" FLWSMC="呈请提请批准逮捕报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042109" />
+	<WS FLWSDM="042144" FLWSMC="呈请签发逮捕证报告书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042111" />
+	<WS FLWSDM="042150" FLWSMC="呈请传讯报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042151" />
+	<WS FLWSDM="042151" FLWSMC="传讯通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042152" FLWSMC="呈请变更羁押期限报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042153" />
+	<WS FLWSDM="042153" FLWSMC="变更羁押期限通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042154" FLWSMC="呈请取保候审报告书（人保）" DX="false" BX="true"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="042112,042104" />
+	<WS FLWSDM="042201" FLWSMC="呈请调取证据报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042202" />
+	<WS FLWSDM="042202" FLWSMC="调取证据通知书" DX="false" BX="false" DXBM="TB_ST_XYR"  WDX="true"
+		ONE="false" BTFLWS=""  ONLY="true"/>
+	<WS FLWSDM="042203" FLWSMC="呈请调取证据清单报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="042204" ONLY="true" WDX="true"/>
+	<WS FLWSDM="042204" FLWSMC="调取证据清单" DX="false" BX="false" DXBM=""  WDX="true" ONLY="true"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042301" FLWSMC="呈请接收证据材料报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042302" />
+	<WS FLWSDM="042302" FLWSMC="接受证据材料清单" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS=""  ONLY="true"/>
+	<WS FLWSDM="042401" FLWSMC="呈请登记保存清单报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042402"  ONLY="true" WDX="true"/>
+	<WS FLWSDM="042402" FLWSMC="登记保存清单" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" WDX="true" ONLY="true"/>
+	<WS FLWSDM="042501" FLWSMC="呈请协助冻结财产报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042502" />
+	<WS FLWSDM="042502" FLWSMC="协助冻结财产通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042503" FLWSMC="呈请协助解除冻结财产报告书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="042504" />
+	<WS FLWSDM="042504" FLWSMC="协助解除冻结财产通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042601" FLWSMC="呈请查封报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042602" />
+	<WS FLWSDM="042602" FLWSMC="查封决定书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042603" FLWSMC="呈请查封清单报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042604" ONLY="true" WDX="true"/>
+	<WS FLWSDM="042604" FLWSMC="查封清单" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" ONLY="true" WDX="true"/>
+	<WS FLWSDM="042605" FLWSMC="呈请解除查封报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042606" ONLY="true" WDX="true"/>
+	<WS FLWSDM="042606" FLWSMC="解除查封清单" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" ONLY="true" WDX="true"/>
+	<WS FLWSDM="042607" FLWSMC="呈请协助查封报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042608" />
+	<WS FLWSDM="042608" FLWSMC="协助查封通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042609" FLWSMC="呈请协助解除查封报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042610" />
+	<WS FLWSDM="042610" FLWSMC="协助解除查封通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042701" FLWSMC="呈请扣押决定报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042702" />
+	<WS FLWSDM="042702" FLWSMC="扣押决定书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042703" FLWSMC="呈请扣押清单报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042704"  ONLY="true" WDX="true"/>
+	<WS FLWSDM="042704" FLWSMC="扣押清单" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS=""  ONLY="true" WDX="true"/>
+	<WS FLWSDM="042705" FLWSMC="呈请扣押邮件报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042706" />
+	<WS FLWSDM="042706" FLWSMC="扣押邮件通知书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042707" FLWSMC="呈请扣押电报报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042708" />
+	<WS FLWSDM="042708" FLWSMC="扣押电报通知书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042709" FLWSMC="呈请解除扣押邮件报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042710" />
+	<WS FLWSDM="042710" FLWSMC="解除扣押邮件通知书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042711" FLWSMC="呈请解除扣押电报报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042712" />
+	<WS FLWSDM="042712" FLWSMC="解除扣押电报通知书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042801" FLWSMC="呈请采取技术侦查措施报告书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="042802" />
+	<WS FLWSDM="042802" FLWSMC="采取技术侦查措施决定书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS="" ONLY="true"/>
+	<WS FLWSDM="042803" FLWSMC="呈请执行技术侦查措施报告书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="042804" />
+	<WS FLWSDM="042804" FLWSMC="执行技术侦查措施通知书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS="" ONLY="true"/>
+	<WS FLWSDM="042805" FLWSMC="呈请延长技术侦查措施期限报告书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="042806" />
+	<WS FLWSDM="042806" FLWSMC="延长技术侦查措施期限决定书" DX="false" BX="false"
+		DXBM="" ONE="false" BTFLWS="" WDX="true" ONLY="true"/>
+	<WS FLWSDM="042807" FLWSMC="呈请解除技术侦查措施报告书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="042808" />
+	<WS FLWSDM="042808" FLWSMC="解除技术侦查措施决定书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS="043102"  ONLY="true"/>
+	<WS FLWSDM="043101" FLWSMC="呈请通缉报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="043102" FLWSMC="通缉令" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="043103" FLWSMC="关于撤销 字〔 〕 号通缉令的通知" DX="false" BX="true"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="" />
+	<WS FLWSDM="043104" FLWSMC="呈请撤销通缉令报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="043103" />
+	<WS FLWSDM="043404" FLWSMC="呈请没收违法所得报告书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="043405" />
+	<WS FLWSDM="043405" FLWSMC="没收违法所得意见书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS=""  ONLY="true"/>
+	<WS FLWSDM="043406" FLWSMC="违法所得清单" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS=""  ONLY="true" WDX="true"/>
+	<WS FLWSDM="043407" FLWSMC="呈请死亡报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="043408" />
+	<WS FLWSDM="043408" FLWSMC="死亡通知书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="043501" FLWSMC="呈请终止侦查报告书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="043502" />
+	<WS FLWSDM="043502" FLWSMC="终止侦查决定书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="050001" FLWSMC="呈请侦查终结报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="050002" FLWSMC="起诉意见书" DX="true" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" WDX="false" ONLY="true"/>
+	<WS FLWSDM="050007" FLWSMC="呈请破案报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="050008" FLWSMC="呈请移送起诉报告书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="050002" />
+	<WS FLWSDM="050101" FLWSMC="呈请发还清单报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="050102"  ONLY="true" WDX="true"/>
+	<WS FLWSDM="050102" FLWSMC="发还清单" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS=""  ONLY="true" WDX="true"/>
+	<WS FLWSDM="050103" FLWSMC="呈请随案移送清单报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="050104"  ONLY="true" WDX="true"/>
+	<WS FLWSDM="050104" FLWSMC="随案移送清单" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS=""  ONLY="true" WDX="true"/>
+	<WS FLWSDM="050105" FLWSMC="呈请销毁清单报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="050106"  ONLY="true" WDX="true"/>
+	<WS FLWSDM="050106" FLWSMC="销毁清单" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS=""  ONLY="true" WDX="true"/>
+	<WS FLWSDM="060001" FLWSMC="补充侦查报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" WDX="true" ONLY="true"/>
+	<WS FLWSDM="060002" FLWSMC="呈请补充侦查报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="060001" />
+<!--	<WS FLWSDM="070001" FLWSMC="呈请复议报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="070002" />
+	<WS FLWSDM="070002" FLWSMC="复议决定书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="070003" FLWSMC="呈请要求复议报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="070004" />
+	<WS FLWSDM="070004" FLWSMC="要求复议意见书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="070005" FLWSMC="呈请提请复核报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="070006" />
+	<WS FLWSDM="070006" FLWSMC="提请复核意见书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS="" />-->
+	<WS FLWSDM="080001" FLWSMC="呈请回避报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="080002" />
+	<WS FLWSDM="080002" FLWSMC="回避决定书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS=""  ONLY="true"/>
+	<WS FLWSDM="080003" FLWSMC="呈请驳回申请回避报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="080004" />
+	<WS FLWSDM="080004" FLWSMC="驳回申请回避决定书" DX="false" BX="false" DXBM=""  WDX="true"
+		ONE="false" BTFLWS=""  ONLY="true"/>
+	<WS FLWSDM="090002" FLWSMC="呈请提供法律援助报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="090003" />
+	<WS FLWSDM="090003" FLWSMC="提供法律援助通知书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="090004" FLWSMC="呈请会见犯罪嫌疑人报告书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="090005" />
+	<WS FLWSDM="090005" FLWSMC="准予会见犯罪嫌疑人决定通知书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="" />
+	<WS FLWSDM="090006" FLWSMC="会见犯罪嫌疑人申请表" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="090007" FLWSMC="呈请不准予会见报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="090008" />
+	<WS FLWSDM="090008" FLWSMC="不准予会见犯罪嫌疑人决定书" DX="false" BX="false"
+		DXBM="TB_ST_XYR" ONE="false" BTFLWS="" />
+	<WS FLWSDM="100001" FLWSMC="呈报办案协作报告书" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="100002" />
+	<WS FLWSDM="100002" FLWSMC="办案协作函" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" />
+	<WS FLWSDM="042115" FLWSMC="呈请保存证件报告书" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="042116"  ONLY="false" WDX="false"/>
+	<WS FLWSDM="042116" FLWSMC="保存证件清单" DX="false" BX="true" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS=""  ONLY="false" WDX="false"/>
+ 	<WS FLWSDM="042704" FLWSMC="扣押清单" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS=""  ONLY="true" WDX="true"/>
+	<WS FLWSDM="700001" FLWSMC="刑事复议申请记录" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700002" FLWSMC="呈请不予受理刑事复议申请报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700003" FLWSMC="不予受理刑事复议申请决定书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700004" FLWSMC="呈请不予受理刑事复核申请报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700005" FLWSMC="不予受理刑事复核申请决定书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700006" FLWSMC="呈请刑事复议申请补充材料报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700007" FLWSMC="刑事复议申请补充材料通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700008" FLWSMC="呈请刑事复核申请补充材料报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700009" FLWSMC="刑事复核申请补充材料通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700010" FLWSMC="呈请中止刑事复议报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700011" FLWSMC="中止刑事复议通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700012" FLWSMC="呈请中止刑事复核对报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700013" FLWSMC="中止刑事复核通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700014" FLWSMC="呈请延长刑事复议期限报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700015" FLWSMC="延长刑事复议期限通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700016" FLWSMC="呈请延长刑事复核期限报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700017" FLWSMC="延长刑事复核期限通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700018" FLWSMC="呈请终止刑事复议程序报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700019" FLWSMC="终止刑事复议程序通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700020" FLWSMC="呈请终止刑事复核程序报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700021" FLWSMC="终止刑事复核程序通知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700022" FLWSMC="呈请刑事复议报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="700013" ONLY="false"/>
+	<WS FLWSDM="700023" FLWSMC="刑事复议决定书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700024" FLWSMC="呈请刑事复核报告书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="700015" ONLY="false"/>
+	<WS FLWSDM="700025" FLWSMC="刑事复核决定书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="700099" FLWSMC="刑事复核申请记录" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" ONLY="false"/>
+	<WS FLWSDM="110006" FLWSMC="告知书" DX="false" BX="false" DXBM=""
+		ONE="false" BTFLWS="" WDX="true" ONLY="true"/>
+	<WS FLWSDM="120001" FLWSMC="换押证" DX="false" BX="false" DXBM="TB_ST_XYR"
+		ONE="false" BTFLWS="" WDX="false" ONLY="false"/>
+</ROOT>
